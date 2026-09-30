@@ -1,0 +1,139 @@
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f9fc;
+  --text: #14181f;
+  --text-muted: #5c6672;
+  --accent: #2f6fed;
+  --accent-soft: #e8effe;
+  --border: #e6eaf0;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.content {
+  max-width: 560px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin-bottom: 48px;
+}
+
+.logo .accent {
+  color: var(--accent);
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+#extra-content {
+  margin-top: 32px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 24px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---- Example styles ready for future additions ---- */
+
+/* Email signup form, if added later */
+.signup-form {
+  display: flex;
+  gap: 8px;
+  max-width: 380px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.signup-form input[type="email"] {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  background: #fff;
+}
+
+.signup-form button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.signup-form button:hover {
+  opacity: 0.9;
+}
+
+/* Social links, if added later */
+.social-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.social-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.social-links a:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
