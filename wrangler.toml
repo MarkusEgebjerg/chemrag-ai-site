@@ -1,5 +1,5 @@
 name = "chemrag-ai-site"
-compatibility_date = "2026-09-30"
+compatibility_date = "2056-09-01"
 
 [assets]
-directory = "."
+directory = "./public"
