@@ -1,5 +1,5 @@
-   name = "chemrag-ai-site"
-   compatibility_date = "2026-09-30"
+name = "chemrag-ai-site"
+compatibility_date = "2026-09-30"
 
-   [assets]
-   directory = "."
+[assets]
+directory = "."
